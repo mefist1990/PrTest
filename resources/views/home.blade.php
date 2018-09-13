@@ -35,9 +35,9 @@
 <p>{!! $issues->description !!}</p>
 @else
 <p>Воросов больше нет</p>
-<form action="reset" name="myform">
-                  <button type="submit" class="btn list-group-item" name="answer">Начать заново</button>
-</form>
+
+                  <a class="btn list-group-item" href="#">Получить результаты</a>
+
 @endif
 
 
