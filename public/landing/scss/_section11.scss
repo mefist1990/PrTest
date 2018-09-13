@@ -1,0 +1,47 @@
+.section-11{
+  .h2{
+    margin-bottom: 60px;
+  }
+  .wr-table{
+    max-width: 1140px;
+    margin: auto;
+    max-height: 491px;
+    overflow-y: scroll;
+  }
+  .table{
+    max-width: 1140px;
+    margin: auto;
+  }
+  .table thead th{
+    vertical-align: middle;
+    &:nth-of-type(2){
+      max-width: 660px;
+    }
+  }
+  .table td, .table th{
+    vertical-align: middle;
+  }
+  p{
+    padding-top: 20px;
+    &.h3{
+      padding-top: 30px;
+    }
+  }
+  .wr-btn{
+    margin-top: 30px;
+    .btn{
+      width: 290px;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .section-11 {
+    .table{
+      min-width: 360px;
+    }
+    .table td,.table th{
+      font-size: 12px;
+    }
+  }
+}
+

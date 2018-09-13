@@ -1,0 +1,58 @@
+.section-1{
+  height: 100vh;
+  background: url("../images/st4.jpg") center 0 no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .h1{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .text{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .sub-main-title{
+    font-size: 20px;
+    padding: 40px 15px 0;
+    width: 50%;
+  }
+  .btn{
+    margin-top: 60px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .section-1{
+    .sub-main-title{
+      width: 80%;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .section-1{
+    .h1{
+      font-size: 5rem;
+    }
+    .sub-main-title{
+      width: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  .section-1{
+    .h1{
+      font-size: 3rem;
+    }
+  }
+}

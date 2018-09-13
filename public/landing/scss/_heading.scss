@@ -1,0 +1,32 @@
+.h2,.h3,.h4{
+  color: $color-title;
+}
+.h2{
+  font-size: 50px;
+}
+.h3{
+
+}
+.h4{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+@include media-breakpoint-down(lg) {
+  .h2{
+    font-size: 35px;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  .h2{
+    font-size: 25px;
+  }
+  .h3{
+    font-size: 18px;
+  }
+  .h4{
+    font-size: 16px;
+  }
+}

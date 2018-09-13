@@ -1,0 +1,26 @@
+.section-8{
+  .h2{
+    padding-bottom: 30px;
+  }
+  .card-header{
+    padding: 0;
+    margin-bottom: -1px;
+  }
+  .btn-link{
+    width: 100%;
+    text-align: left;
+    color: #ffffff;
+    background: $color-lilac;
+    padding: 15px 1.25rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      background: lighten($color-lilac, 5%);
+    }
+    &.collapsed{
+      border-radius: .25rem;
+    }
+  }
+}

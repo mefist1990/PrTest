@@ -1,0 +1,48 @@
+button,input,textarea{
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s;
+  outline: none;
+  &:focus{
+    outline: none;
+  }
+}
+form{
+  display: block;
+  position: relative;
+  input[type='radio'],input[type='checkbox']{
+    width: auto !important;
+  }
+  input:not([type='radio']),
+  input:not([type='checkbox']){
+    width: 100%;
+    height: 46px;
+    padding: 0 25px;
+    font-size: 14px;
+    &::-webkit-input-placeholder {
+      font-style: italic;
+    }
+    &::-moz-placeholder {
+      font-style: italic;
+    }
+    &:-moz-placeholder {
+      font-style: italic;
+    }
+    &:-ms-input-placeholder {
+      font-style: italic;
+    }
+  }
+  button{
+    display: block;
+    background: $color-lilac;
+    color: #ffffff;
+    width: 100%;
+  }
+}
+.form-field{
+  position: relative;
+}
+.form-check{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

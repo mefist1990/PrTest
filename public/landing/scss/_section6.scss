@@ -1,0 +1,22 @@
+.section-6{
+  padding-top: 40px;
+  .h2{
+    margin: 60px 0;
+  }
+  .wr-pdf{
+    border: 2px solid #000000;
+    display: inline-block;
+    max-width: 360px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .section-6{
+    .h2{
+      margin: 30px 0;
+    }
+    .wr-pdf{
+      max-width: 280px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.section-3{
+  .h2{
+    margin-top: -60px;
+  }
+  .wr-text{
+    margin-left: -100px;
+    margin-top: 100px;
+    p{
+      position: relative;
+      padding-left: 25px;
+      &:before{
+        content: '\f00c';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        font-size: 12px;
+      }
+    }
+  }
+  .wr-btn{
+    padding-top: 60px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .section-3{
+    .wr-text{
+      margin-left: 0;
+      margin-top: 60px;
+    }
+    .h2{
+      margin-top: 0;
+    }
+    .wr-img{
+      background: url("../images/pic-1.jpg") center 0 no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateUsersProfessionsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('user_profession', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('user_id');
+            $table->string('prof_id');
+            $table->string('prof_title');
+            $table->string('total_executed');
+            $table->string('total_unfulfilled');
+            $table->string('total_executed_factor_yes');
+            $table->string('total_executed_factor_no');
+            $table->string('total_unfulfilled_factor_yes');
+            $table->string('total_unfulfilled_factor_no');
+            $table->string('total');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('user_profession');
+    }
+}
