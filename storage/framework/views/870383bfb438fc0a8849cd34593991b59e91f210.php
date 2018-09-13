@@ -105,7 +105,7 @@
 
             </ul>
           </li>
-
+          <?php if(Auth::id() == 1): ?>
           <li class=" nav-item"><a href="/"><i class="icon-download"></i><span data-i18n="nav2.dash.main" class="menu-title">Экспорт-Импорт</span></a>
             <ul class="menu-content">
               <li class="active"><a href="/importExport/" data-i18n="nav2.dash.main" class="menu-item">Экспорт-Импорт Вопросов</a>
@@ -120,11 +120,14 @@
             </ul>
 
           </li>
+
               <li><a href="/pro/"  class="menu-item">Тестовый подсчет значений</a>
               </li>
 
               <li><a href="/result/"  class="menu-item">Результат ответов на тесты</a>
               </li>
+
+          <?php endif; ?>
         </ul>
       </div>
       <!-- /main menu content-->
